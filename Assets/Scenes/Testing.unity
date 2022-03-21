@@ -569,11 +569,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _movementAcceleration: 50
-  _maxMoveSpeed: 12
+  _maxMoveSpeed: 5
   _groundLinearDrag: 0
   _jumpForce: 13
   _airLinearDrag: 2
-  _fallMultiplier: 8
-  _lowJumpMultiplier: 10
+  _fallMultiplier: 3
+  _lowJumpMultiplier: 4
   _groundBoxcastLength: 0.8
   _isOnGround: 0
