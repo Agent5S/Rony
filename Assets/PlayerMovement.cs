@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walking,
+    jumping
+}
+
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Components")]
