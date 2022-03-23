@@ -12,7 +12,11 @@ public enum EnemyState
 
 public class EnemyController : MonoBehaviour
 {
-    public EnemyController Instance;
+    [HideInInspector] public EnemyController Instance;
+    public float DamageDealt
+    {
+        get { return _damageDealt; }
+    }
 
     public EnemyState _currentState { get; set; }
 
@@ -24,6 +28,9 @@ public class EnemyController : MonoBehaviour
     [Header("Movement variables")]
     [SerializeField] private float _speed;
 
+    [Header("Attack variables")]
+    [SerializeField] private float _damageDealt;
+
     private void Start()
     {
         Instance = this;
@@ -33,7 +40,6 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_currentState);
         if (_currentState == EnemyState.attacking)
         {
             transform.Translate(new Vector2(_player.transform.position.x - transform.position.x, 0f).normalized * _speed * Time.deltaTime);
