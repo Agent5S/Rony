@@ -673,7 +673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
   _speed: 4
-  _damageDealt: 0
+  _damageDealt: 50
 --- !u!50 &748443524
 Rigidbody2D:
   serializedVersion: 4
